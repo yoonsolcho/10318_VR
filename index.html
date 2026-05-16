@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>10318 강의실 VR</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0--">
+        <li class="text">강의실 무대</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-a">
+        <li class="text">A열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-b">
+        <li class="text">B열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-c">
+        <li class="text">C열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-d">
+        <li class="text">D열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-e">
+        <li class="text">E열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-f">
+        <li class="text">F열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-g">
+        <li class="text">G열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-h">
+        <li class="text">H열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-i">
+        <li class="text">I열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-j">
+        <li class="text">J열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-k">
+        <li class="text">K열</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12--">
+        <li class="text">강의실 뒷편</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13--">
+        <li class="text">강의실 문앞</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-a-1-">
+        <li class="text">A-1 시야</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-a-8-">
+        <li class="text">A-8 시야</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-a-9-">
+        <li class="text">A-9 시야</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-a-17-">
+        <li class="text">A-17 시야</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18----">
+        <li class="text"> 무대 앞쪽 문</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19----">
+        <li class="text">휴게 공간 연결 통로</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
